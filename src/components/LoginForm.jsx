@@ -1,7 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
 
-const projectID = "cfb9cb3e-4135-4603-9569-25ae07e2e4cf";
+import projectId from "../asset/details.json";
+
+const projectID = projectId.projectDeatils.projectID;
 
 const LoginForm = () => {
   const [userName, setUserName] = useState("");
